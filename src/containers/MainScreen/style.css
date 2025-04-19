@@ -1,0 +1,61 @@
+.card-screen {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-template-rows: repeat(auto-fit, 120px);
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    background-color: #ebebeb;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px;
+
+    label {
+        font-weight: 700;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    position: fixed;
+    inset: 4em 0px 0px;
+    overflow: auto;
+}
+
+.screen-container-text {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: white;
+}
+
+.separator {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2rem;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.container-icon {
+    display: flex;
+}
