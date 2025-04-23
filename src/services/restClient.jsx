@@ -3,7 +3,7 @@ import { waitControlHide, waitControlShow } from "../components/Controls/WaitCon
 import { utilsValidator } from "../Helpers/utils/utilsValidator";
 import { isNull, isUndefined } from 'lodash';
 
-const urlBase = 'https://localhost:7013/api/';
+const urlBase = 'https://localhost:7217/api/';
 
 export const getRequestUserInfo = () =>
     sessionStorage.requestUserInfo

@@ -1,4 +1,4 @@
-/* Variables para colores y sombras */
+/* Variables for colors and shadows */
 :root {
   --primary-color: #4361ee;
   --primary-hover: #3a56d4;
@@ -20,7 +20,7 @@
   --navbar-height: 60px;
 }
 
-/* Estilos generales */
+/* general styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,7 +33,7 @@ body {
   color: var(--text-color);
 }
 
-/* Contenedor principal */
+/* main container */
 .admin-container {
   display: grid;
   min-height: 100vh;
@@ -148,10 +148,9 @@ body {
   width: 200px;
   z-index: 30;
   margin-top: 0px;
-  /*Reduceladistanciaentreelbotónyelmenú*/
+
   display: none;
   transition: opacity 0.3s ease-in-out;
-  /*Transiciónsuave*/
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -256,7 +255,7 @@ body {
   border-left: 3px solid var(--primary-color);
 }
 
-/* Contenido principal */
+
 .admin-content {
   grid-area: content;
   overflow-y: auto;
@@ -268,7 +267,6 @@ body {
   height: 95%;
 }
 
-/* Contenedor de gestión */
 .management-container {
   background-color: var(--card-background);
   border-radius: 8px;
@@ -303,13 +301,11 @@ body {
   grid-area: main-user;
 }
 
-/* Tabla de datos */
 .table-container {
   flex-grow: 1;
   display: flex;
   min-height: 0;
   height: 100%;
-  /* Permite que el DataGrid no desborde */
 }
 
 
@@ -372,7 +368,7 @@ body {
   color: var(--info-color);
 }
 
-/* Botones */
+/* Buttons */
 .btn-primary,
 .btn-secondary,
 .btn-danger,
@@ -441,7 +437,7 @@ body {
   gap: 8px;
 }
 
-/* Iconos */
+/* Icons */
 .icon-users:before {
   content: "👥";
 }
@@ -587,7 +583,7 @@ body {
   text-align: left;
 }
 
-/* Checkbox personalizado */
+/* Checkbox customized */
 .checkbox-container {
   display: block;
   position: relative;
@@ -644,7 +640,7 @@ body {
   transform: rotate(45deg);
 }
 
-/* Estilos para la lista de pantallas con acceso */
+
 .screen-access-list {
   display: flex;
   flex-wrap: wrap;
