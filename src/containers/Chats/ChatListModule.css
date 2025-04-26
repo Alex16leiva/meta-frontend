@@ -1,0 +1,139 @@
+.chatList {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchContainer {
+    padding: 10px;
+    background-color: #cccbc8;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    color: #54656f;
+    margin-right: 10px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.chats {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.chatItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.chatItem:hover {
+    background-color: #f0f2f5;
+}
+
+.chat-card {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.chat-card:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.01);
+}
+
+.chat-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.chat-time {
+    font-size: 12px;
+    color: #888;
+}
+
+.chat-message {
+    font-size: 14px;
+    color: #555;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.chatInfo {
+    flex-grow: 1;
+}
+
+.chatInfo h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #111b21;
+}
+
+.chatInfo p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #667781;
+}
+
+.time {
+    font-size: 12px;
+    color: #667781;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
