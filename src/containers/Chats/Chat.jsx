@@ -11,9 +11,35 @@ export const Chat = () => {
     }, []);
 
     return (
-        <div className={'container'}>
-            <ChatList onSelectChat={handleSelectChat} />
-            <ChatWindow selectedChat={selectedChat} />
-        </div>
+        <>
+            <div className='social-container social-main'>
+                <div>
+                    <h3>Social Manager</h3>
+                </div>
+                <div className='social-detail'>
+                    <div>
+                        Casos en cola: 1
+                    </div>
+                    <div style={{
+                        width: '2px',         // Ancho del divisor
+                        backgroundColor: 'black', // Color del divisor
+                        margin: '0 20px'      // Espaciado alrededor del divisor
+                    }} />
+                    <div>
+                        Casos Gestionados: 5
+                    </div>
+                    <div style={{
+                        width: '2px',         // Ancho del divisor
+                        backgroundColor: 'black', // Color del divisor
+                        margin: '0 20px'      // Espaciado alrededor del divisor
+                    }} />
+                </div>
+            </div>
+            <div className={'container'}>
+
+                <ChatList onSelectChat={handleSelectChat} />
+                <ChatWindow selectedChat={selectedChat} />
+            </div>
+        </>
     )
 }

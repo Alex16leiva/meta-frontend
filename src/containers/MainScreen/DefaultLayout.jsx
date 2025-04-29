@@ -20,7 +20,6 @@ export const DefaultLayout = () => {
         user.permisos?.some(permiso => permiso.pantallaId === item.securityName && permiso.ver)
     );
 
-    console.log(Screens, screensPermitidas);
 
     return (
         <div className='body'>

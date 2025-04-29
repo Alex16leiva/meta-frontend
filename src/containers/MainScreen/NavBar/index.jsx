@@ -5,6 +5,7 @@ import { unRegisterScreen } from '../screenSlicer';
 import { logout } from '../../../features/authSlice';
 import { useState } from 'react';
 import { UserProfile } from './UserProfile';
+import useSessionLog from '../../../components/SesionLog/useSessionTracker';
 export const NavBar = () => {
     const { user } = useSelector(state => state.auth)
     const { screen } = useSelector(state => state.screen)
@@ -12,6 +13,8 @@ export const NavBar = () => {
     const navigate = useNavigate();
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [openModal, setOpenModal] = useState(false);
+    const { endSession } = useSessionLog();
+
 
     const handleGoToMenu = () => {
         navigate('/')
@@ -19,6 +22,7 @@ export const NavBar = () => {
     }
 
     const handleLogout = () => {
+        endSession();
         dispatch(logout());
         navigate('login')
     };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ChatContainer = styled.div`
     width: 70%;
-    height: 91vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     background-color: #f0f2f5;
@@ -12,8 +12,9 @@ export const ChatHeader = styled.div`
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #cccbc8;
+    background-color: #00A884;
     border-bottom: 1px solid #e0e0e0;
+    color: #fbfbfb;
 `;
 
 export const Avatar = styled.div`
@@ -22,6 +23,19 @@ export const Avatar = styled.div`
     border-radius: 50%;
     background-color: #ddd;
     margin-right: 15px;
+`;
+
+export const CategoriaContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3px;
+`;
+
+export const Categoria = styled.div`
+    background-color: #ddd;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
 `;
 
 export const MessageList = styled.div`

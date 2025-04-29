@@ -15,7 +15,9 @@ import {
     Input,
     SendButton,
     MessageContainer,
-    Timestamp
+    Timestamp,
+    Categoria,
+    CategoriaContainer
 } from "./ChatWindow.styles";
 import { FormattedDate } from "../../components/Controls/FormattedDate"
 
@@ -203,6 +205,18 @@ export const ChatWindow = ({ selectedChat }) => {
                         <Avatar />
                         <h2>{selectedChat.nombre}</h2>
                     </ChatHeader>
+                    <CategoriaContainer>
+                        <Categoria>
+                            Informacion
+                        </Categoria>
+                        <Categoria>
+                            Alquiler
+                        </Categoria>
+                        <Categoria>
+                            Ventas de Carro
+                        </Categoria>
+                    </CategoriaContainer>
+                    <hr style={{ border: '1px solid #ddd', margin: '5px 0' }} />
                     <MessageList ref={messageListRef}>
                         {sortedDates.map((date) => (
                             <div key={date}>
