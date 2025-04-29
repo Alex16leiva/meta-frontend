@@ -6,6 +6,7 @@ export const ChatCardContainer = styled.div`
   align-items: center;
   padding: 12px 16px;
   margin-bottom: 10px;
+  margin-top: 10px;
   background-color: ${({ selected }) => (selected ? '#3390ec' : '#ffffff')};
   color: ${({ selected }) => (selected ? '#F8F5E9' : '#333')};
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

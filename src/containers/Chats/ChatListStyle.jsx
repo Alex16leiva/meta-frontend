@@ -15,7 +15,7 @@ export const ChatTypeSelected = styled.div`
     padding: 10px;
 
     &.selected {
-        border-bottom: 3px solid #FF4081; /* Color del borde cuando está seleccionado */
+        border-bottom: 3px solid #0984e3; /* Color del borde cuando está seleccionado */
         background-color: #ddd
     }
 `
