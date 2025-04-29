@@ -154,3 +154,14 @@
     justify-content: flex-end;
     justify-items: end;
 }
+
+.social-item {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    width: 2px;
+    background-color: black;
+    margin: 0 20px;
+}
