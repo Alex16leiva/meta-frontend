@@ -216,7 +216,7 @@ export const ChatWindow = ({ selectedChat }) => {
                             Ventas de Carro
                         </Categoria>
                     </CategoriaContainer>
-                    <hr style={{ border: '1px solid #ddd', margin: '5px 0' }} />
+                    {/* <hr style={{ border: '1px solid #ddd', margin: '5px 0' }} /> */}
                     <MessageList ref={messageListRef}>
                         {sortedDates.map((date) => (
                             <div key={date}>

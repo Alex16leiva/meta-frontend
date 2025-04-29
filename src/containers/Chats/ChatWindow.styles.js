@@ -28,14 +28,25 @@ export const Avatar = styled.div`
 export const CategoriaContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
-    margin-top: 3px;
+    gap: 10px;
+    padding: 10px 0; // 👈 Padding arriba y abajo
+
 `;
 
 export const Categoria = styled.div`
     background-color: #ddd;
-    padding: 5px;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 6px 12px;         // Padding horizontal y vertical
+    font-size: 14px;           // Letra más pequeña
+    font-weight: 500;          // Un poco menos pesado que "bold"
+    border-radius: 20px;       // Más redondo
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: #ccc;
+        transform: scale(1.05);
+    }
 `;
 
 export const MessageList = styled.div`
@@ -44,6 +55,7 @@ export const MessageList = styled.div`
     padding: 20px;
     display: flex;
     flex-direction: column;
+    background-color: #EFEAE2; // Color tipo WhatsApp
 `;
 
 export const DateDivider = styled.div`
