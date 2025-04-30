@@ -6,16 +6,26 @@
     flex-direction: column;
 }
 
-.searchContainer {
+.infoChatContainer {
     padding: 10px;
     background-color: #00A884;
     display: flex;
     align-items: center;
+    padding: 8px 12px;
+    height: 56px;
+}
+
+.searchContainer {
+    display: flex;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 7px;
 }
 
 .searchIcon {
     color: #54656f;
     margin-right: 10px;
+    height: 52px;
 }
 
 .searchInput {

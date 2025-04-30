@@ -205,9 +205,9 @@ export const ChatWindow = ({ selectedChat }) => {
                 <>
                     <ChatHeader>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <Avatar>
-                            <FaUser style={{ color: 'white' }} size={24} />
-                        </Avatar>
+                            <Avatar>
+                                <FaUser style={{ color: 'white' }} size={24} />
+                            </Avatar>
                             <h2>{selectedChat.nombre}</h2>
                         </div>
 

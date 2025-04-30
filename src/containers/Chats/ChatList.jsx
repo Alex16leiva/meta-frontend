@@ -36,7 +36,7 @@ export const ChatList = ({ onSelectChat }) => {
 
     return (
         <div className="chatList">
-            <div className="searchContainer">
+            <div className="infoChatContainer">
                 Inversiones 98886969
             </div>
             <ChatType>
