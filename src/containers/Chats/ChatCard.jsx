@@ -10,6 +10,7 @@ import {
   ChatMessage,
 } from './ChatCard.styles';
 import { FormattedDate } from "../../components/Controls/FormattedDate";
+import { FaUser } from 'react-icons/fa';
 
 const ChatCard = ({ chat, onSelectChat, isSelected }) => {
   return (
@@ -18,7 +19,9 @@ const ChatCard = ({ chat, onSelectChat, isSelected }) => {
       onClick={() => onSelectChat(chat)}
       selected={isSelected}
     >
-      <Avatar />
+      <Avatar>
+        <FaUser style={{ color: 'white' }} size={30} />
+      </Avatar>
       <ChatContent>
         <ChatHeader>
           <ChatName selected={isSelected}>{chat.nombre}</ChatName>

@@ -8,22 +8,34 @@ export const ChatType = styled.div`
 
 export const ChatTypeSelected = styled.div`
     display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    color: rgba(98, 82, 82, 0.6);
-    border-bottom: 3px solid transparent;
+    align-items: center;
+    justify-content: center; /* Cambiado a center */
+    padding: 10px 15px;
     background-color: #f0f2f5;
-    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111b21;
+    position: relative;
+    gap: 8px; /* Añadimos espacio entre span y badge */
 
     &.selected {
-<<<<<<< HEAD
-        border-bottom: 3px solid #0984e3; /* Color del borde cuando está seleccionado */
-        background-color: #ddd
-=======
-        border-bottom: 3px solid #FF4081; /* Color del borde cuando está seleccionado */
+        border-bottom: 3px solid #74b9ff; /* Color del borde cuando está seleccionado */
         background-color: #ddd;
         font-weight: bold;
         color: black;
->>>>>>> c4e95e761e7d3763fba40c6ca70fc998819fefd1
     }
-`
+`;
+
+
+export const Badge = styled.div`
+    background-color: #74b9ff;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

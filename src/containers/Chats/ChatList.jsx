@@ -4,7 +4,7 @@ import { Search } from "lucide-react"
 import PropTypes from "prop-types";
 import "./ChatListModule.css"
 import ChatCard from "./ChatCard";
-import { ChatType, ChatTypeSelected } from "./ChatListStyle";
+import { ChatType, ChatTypeSelected, Badge } from "./ChatListStyle";
 
 export const ChatList = ({ onSelectChat }) => {
     const [chats, setChats] = useState([])
@@ -44,7 +44,8 @@ export const ChatList = ({ onSelectChat }) => {
                 <ChatTypeSelected
                     className={selectedDiv === 1 ? 'selected' : ''}
                     onClick={() => toggleSelect(1)}>
-                    Activos
+                        <span>Activos</span>
+                        <Badge>3</Badge>
                 </ChatTypeSelected>
                 <ChatTypeSelected
                     className={selectedDiv === 2 ? 'selected' : ''}

@@ -17,9 +17,11 @@ import {
     MessageContainer,
     Timestamp,
     Categoria,
-    CategoriaContainer
+    CategoriaContainer,
+    IconGroup
 } from "./ChatWindow.styles";
 import { FormattedDate } from "../../components/Controls/FormattedDate"
+import { FaUser, FaClock, FaCalendarCheck, FaExclamation } from 'react-icons/fa';
 
 export const ChatWindow = ({ selectedChat }) => {
     const [messages, setMessages] = useState([])
@@ -202,8 +204,18 @@ export const ChatWindow = ({ selectedChat }) => {
             {selectedChat ? (
                 <>
                     <ChatHeader>
-                        <Avatar />
-                        <h2>{selectedChat.nombre}</h2>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <Avatar>
+                            <FaUser style={{ color: 'white' }} size={24} />
+                        </Avatar>
+                            <h2>{selectedChat.nombre}</h2>
+                        </div>
+
+                        <IconGroup>
+                            <FaClock />
+                            <FaCalendarCheck style={{ marginLeft: '12px' }} />
+                            <FaExclamation style={{ marginLeft: '12px' }} />
+                        </IconGroup>
                     </ChatHeader>
                     <CategoriaContainer>
                         <Categoria>
