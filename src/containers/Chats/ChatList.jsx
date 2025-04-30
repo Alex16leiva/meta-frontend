@@ -37,15 +37,14 @@ export const ChatList = ({ onSelectChat }) => {
     return (
         <div className="chatList">
             <div className="searchContainer">
-                <Search className="searchIcon" />
-                <input type="text" placeholder="Buscar o empezar un chat nuevo" className="searchInput" />
+                Inversiones 98886969
             </div>
             <ChatType>
                 <ChatTypeSelected
                     className={selectedDiv === 1 ? 'selected' : ''}
                     onClick={() => toggleSelect(1)}>
-                        <span>Activos</span>
-                        <Badge>3</Badge>
+                    <span>Activos</span>
+                    <Badge>3</Badge>
                 </ChatTypeSelected>
                 <ChatTypeSelected
                     className={selectedDiv === 2 ? 'selected' : ''}
@@ -54,6 +53,10 @@ export const ChatList = ({ onSelectChat }) => {
                 </ChatTypeSelected>
             </ChatType>
             <div className="chats">
+                <div className="searchContainer">
+                    <Search className="searchIcon" />
+                    <input type="text" placeholder="Buscar o empezar un chat nuevo" className="searchInput" />
+                </div>
                 {chats.map((chat) => (
                     <ChatCard key={chat.numeroTelefono}
                         chat={chat}
