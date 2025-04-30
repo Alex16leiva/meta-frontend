@@ -15,7 +15,7 @@ export const ChatTypeSelected = styled.div`
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
-    color: #111b21;
+    color:rgb(140, 144, 148);
     position: relative;
     gap: 8px; /* Añadimos espacio entre span y badge */
 

@@ -9,7 +9,7 @@ import { ChatType, ChatTypeSelected, Badge } from "./ChatListStyle";
 export const ChatList = ({ onSelectChat }) => {
     const [chats, setChats] = useState([])
     const [selectedChat, setSelectedChat] = useState(null);
-    const [selectedDiv, setSelectedDiv] = useState(null);
+    const [selectedDiv, setSelectedDiv] = useState(1);
     useEffect(() => {
         const obtenerChat = async () => {
             try {
